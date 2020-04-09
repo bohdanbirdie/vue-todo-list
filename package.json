@@ -2,14 +2,18 @@
   "name": "todo-list",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://bohdanbirdie.github.io/vue-todo-list",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "ant-design-vue": "^1.5.2",
     "core-js": "^3.6.4",
+    "gh-pages": "^2.2.0",
     "vue": "^2.6.11",
     "vue-router": "^3.1.6",
     "vuex": "^3.1.3"
